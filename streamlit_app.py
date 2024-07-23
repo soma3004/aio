@@ -2,7 +2,7 @@ import streamlit as st
 
 st.write("物理基礎の公式:")
 st.latex(r'\bar{v}=\frac{\Delta x}{\Delta t}')
-st.latex(r'\bar{v}=\frac{x_2-x_1}{t_2-t_1}')
+st.latex(r'\bar{v}=\frac{x_2-x_1}{t_2-t_1}=\frac{\Delta x}{Delta t}')
 st.latex(r'')
 st.latex(r'')
 st.latex(r'')
