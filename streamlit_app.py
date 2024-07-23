@@ -58,7 +58,7 @@ st.latex(r'y=\frac{1}{2}gt^2')
 
 st.write("三角比")
 st.latex(r'sin\theta=\frac{a}{c}')
-st.latex(r'cos\theta=\frad{b}{c}')
+st.latex(r'cos\theta=\frac{b}{c}')
 st.latex(r'sin30°=\frac{1}{2}')
 st.latex(r'sin45°=\frac{√2}{2}')
 st.latex(r'sin60°=\frac{√3}{2}')
