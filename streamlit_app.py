@@ -1,5 +1,11 @@
 import streamlit as st
 
+angle_a=30
+angle_b=45
+angle_c=60
+
+
+
 st.write("物理基礎の公式:")
 
 st.write("変位")
@@ -53,14 +59,17 @@ st.latex(r'v^2-v_o^2=-agy')
 st.write("水平投射")
 st.latex(r'x=v_ot')
 st.latex(r'y=\frac{1}{2}gt^2')
-st.latex(r'')
-st.latex(r'')
-st.latex(r'')
-st.latex(r'')
-st.latex(r'')
-st.latex(r'')
-st.latex(r'')
-st.latex(r'')
+
+
+st.write("三角比")
+st.latex(r'sin\theta=\frac{a}{c}')
+st.latex(r'cos\theta=\frad{b}{c}')
+st.latex(r'sin30°=\frac{1}{2}')
+st.latex(r'sin45°=\frac{√2}{2}')
+st.latex(r'sin60°=\frac{√3}{2}')
+st.latex(r'cos30°=\frac{√3}{2}')
+st.latex(r'cos45°=\frac{√2}{2}')
+st.latex(r'cos60°=\frac{1}{2}')
 st.latex(r'')
 st.latex(r'')
 st.latex(r'')
