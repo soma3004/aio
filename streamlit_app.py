@@ -1,10 +1,5 @@
 import streamlit as st
 
-angle_a=30
-angle_b=45
-angle_c=60
-
-
 
 st.write("物理基礎の公式:")
 
