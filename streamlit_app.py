@@ -1,7 +1,7 @@
 import streamlit as st
 
 problems=[
-    {"question":"私は［空白］にすんでいます。","answer":"東京"},
+    {"question":"下記は何を求める公式か？","line2":"r'\bar{v}=\frac{\Delta x}{\Delta t}'","answer":"変位"},
     {"question":"太陽は［空白］から昇ります。","answer":"東"},
     {"question":"富士山は［空白］にあります。","answer":"日本"},
 ] 
@@ -20,7 +20,7 @@ def next_problem():
     st.session_state.user_input = ''
 
 
-st.title("空白を埋める問題")
+st.title("物理基礎")
 
 current_problem = problems[st.session_state.current_problem_index]
 
