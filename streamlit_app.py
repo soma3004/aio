@@ -1,7 +1,7 @@
 import streamlit as st
 
 problems=[
-    {"question":"下記は何を求める公式か？","line2":"r'\bar{v}=\frac{\Delta x}{\Delta t}'","answer":"変位"},
+    {"line1":"下記は何を求める公式か？","line2":"r'\bar{v}=\frac{\Delta x}{\Delta t}'","answer":"変位"},
     {"question":"太陽は［空白］から昇ります。","answer":"東"},
     {"question":"富士山は［空白］にあります。","answer":"日本"},
 ] 
