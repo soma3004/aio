@@ -1,28 +1,46 @@
 import streamlit as st
 
-problem={
-    "question":"私は［空白］にすんでいます。",
-    "answer":"東京"
-}
+problems=[
+    {"question":"私は［空白］にすんでいます。","answer":"東京"},
+    {"question":"太陽は［空白］から昇ります。","answer":"東"},
+    {"question":"富士山は［空白］にあります。","answer":"日本"},
+] 
+
+if 'current_problem_index' not in st.session_state:
+    st.session_state.current_problem_index = 0
 
 def check_answer(user_answer):
-    return user_answer.strip() == problem["answer"]
+    return user_answer.strip() == problems[st.session_state.current_problem_index]["answer"]
+
+def next_problem():
+    if st.session_state.current_problem_index < len(problems) - 1:
+        st.session_state.current_problem_index += 1
+    else:
+        st.session_state.current_problem_index = 0
+    st.session_state.user_input = ''
+
 
 st.title("空白を埋める問題")
 
-st.write(problem["question"])
+current_problem = problems[st.session_state.current_problem_index]
 
-user_input = st.text_input("空白に入れる言葉を入力してください:")
+st.write(current_problem["question"])
+
+user_input = st.text_input("空白に入れる言葉を入力してください:",key="user_input")
 
 if st.button("答え合わせ"):
     if user_input:
         if check_answer(user_input):
             st.success("正解です！")
+            next_problem()
         else:
             st.error("不正解です。もう一度試してみてください。")
     else:
         st.warning("回答を入力してください。")
-                    
+
+if st.button("次の問題"):
+    next_problem()
+
 
 st.write("物理基礎の公式:")
 
