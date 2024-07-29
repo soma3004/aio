@@ -1,5 +1,28 @@
 import streamlit as st
 
+problem={
+    "question":"私は［空白］にすんでいます。",
+    "answer":"東京"
+}
+
+def check_answer(user_answer):
+    return user_answer.strip() == problem["answer"]
+
+st.title("空白を埋める問題")
+
+st.write(problem["question"])
+
+user_input = st.text_input("空白に入れる言葉を入力してください:")
+
+if st.button("答え合わせ"):
+    if user_input:
+        if check_answer(user_input):
+            st.success("正解です！")
+        else:
+            st.error("不正解です。もう一度試してみてください。")
+    else:
+        st.warning("回答を入力してください。")
+                    
 
 st.write("物理基礎の公式:")
 
@@ -68,3 +91,5 @@ st.latex(r'cos60°=\frac{1}{2}')
 st.latex(r'')
 st.latex(r'')
 st.latex(r'')
+
+
