@@ -6,7 +6,7 @@ problems=[
     {"question":"富士山は［空白］にあります。","answer":"日本"},
 ] 
 formula=[
-    {"latex(r'\bar{v}=\frac{Delta x}{Delta t})"}
+    {"st.latex(r'\bar{v}=\frac{Delta x}{Delta t})"}
 ]
 
 if 'current_problem_index' not in st.session_state:
