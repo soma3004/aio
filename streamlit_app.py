@@ -1,10 +1,13 @@
 import streamlit as st
 
 problems=[
-    {"line1":"次の公式は何を求めるか？","line2":"st.latex(r'\var{v}=\frac{\Delta x}{Delta t})","answer":"変位"},
+    {"question":"次の公式は何を求めるか？","answer":"変位"},
     {"question":"太陽は［空白］から昇ります。","answer":"東"},
     {"question":"富士山は［空白］にあります。","answer":"日本"},
 ] 
+formula=[
+    {"latex(r'\bar{v}=\frac{Delta x}{Delta t})"}
+]
 
 if 'current_problem_index' not in st.session_state:
     st.session_state.current_problem_index = 0
