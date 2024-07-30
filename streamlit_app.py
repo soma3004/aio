@@ -18,6 +18,8 @@ def load_date():
     part13 = pd.read_excel("単語ー電流.xlsx")
     return pd.concat([part1, part2, part3, part4,part5,part6,part7,part8,part9,part10,part11,part12,part13], ignore_index=True)
 
+st.sidebar.title("単位を選択してください。")
+
 
 problems=[
     {"question":r'\var{v}=\frac{Delta x}{Delta t}',"answer":"変位"}
