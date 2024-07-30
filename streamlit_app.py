@@ -1,7 +1,7 @@
 import streamlit as st
 
 problems=[
-    {"question":"","answer":""}
+    {"question":r'\var{v}=\frac{Delta x}{Delta t}',"answer":"変位"}
 ] 
 
 
