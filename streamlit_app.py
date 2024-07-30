@@ -105,6 +105,11 @@ st.latex(r'sin60°=\frac{√3}{2}')
 st.latex(r'cos30°=\frac{√3}{2}')
 st.latex(r'cos45°=\frac{√2}{2}')
 st.latex(r'cos60°=\frac{1}{2}')
+st.latex(r'''
+     a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =
+     \sum_{k=0}^{n-1} ar^k =
+     a \left(\frac{1-r^{n}}{1-r}\right)
+     ''')
 st.latex(r'')
 st.latex(r'')
 st.latex(r'')
