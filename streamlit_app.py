@@ -28,6 +28,7 @@ st.title("物理基礎")
 current_problem = problems[st.session_state.current_problem_index]
 
 st.write(current_problem["question"])
+st.write(formula)
 
 user_input = st.text_input("空白に入れる言葉を入力してください:",key="user_input")
 
