@@ -107,8 +107,8 @@ st.latex(r'cos45°=\frac{√2}{2}')
 st.latex(r'cos60°=\frac{1}{2}')
 st.latex(r'')
 st.latex(r'')
-st.latex(r'')
 
+st.write(10^-24)
 
 st.title("単位の変換")
 selected_item=st.selectbox("",[
