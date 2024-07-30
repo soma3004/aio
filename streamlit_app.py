@@ -1,13 +1,9 @@
 import streamlit as st
 
 problems=[
-    {"question":"次の公式は何を求めるか？","answer":"変位"},
-    {"question":"太陽は［空白］から昇ります。","answer":"東"},
-    {"question":"富士山は［空白］にあります。","answer":"日本"},
+    {"question":""}
 ] 
-formula=[
-    {"st.latex(r'\bar{v}=\frac{Delta x}{Delta t})"}
-]
+
 
 if 'current_problem_index' not in st.session_state:
     st.session_state.current_problem_index = 0
@@ -28,7 +24,6 @@ st.title("物理基礎")
 current_problem = problems[st.session_state.current_problem_index]
 
 st.write(current_problem["question"])
-st.write(formula)
 
 user_input = st.text_input("空白に入れる言葉を入力してください:",key="user_input")
 
