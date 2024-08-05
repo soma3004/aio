@@ -5,10 +5,23 @@ import random
 st.sidebar.title("単位を選択してください。")
 
 
-problems=[
-    {"question":r'\var{v}=\frac{Delta x}{Delta t}',"answer":"変位"}
-] 
+problems=[    
+    {"question":"変位の公式","answer":""}
+    {"question":"速度の公式","answer":""}
+    {"question":"等速直線運動","answer":""}
+    {"question":"合成速度","answer":""}
+    {"question":"相対運動","answer":""}
+    {"question":"加速度","answer",""}
+    {"question":"等加速度直線運動　３つ","answer",""}
+    {"question":"自由落下　３つ","answer",""}
+    {"question":"鉛直投げ下ろし　３つ","answer",""}
+    {"question":"鉛直投げ上げ　３つ","answer",""}
+    {"question":"水平投射　２つ","answer",""}
 
+]
+
+options = [r'\bar{v}=\frac{\Delta x}{\Delta t}',]
+st.selectbox(options)
 
 if 'current_problem_index' not in st.session_state:
     st.session_state.current_problem_index = 0
@@ -159,3 +172,4 @@ if st.button("リセット"):
     st.session_state.corrent_answer = st.session_state.current_problem[0] * st.session_state.current_problem[1]
     st.session_state.result_message = None
     st.session_state.user_answer = None
+
