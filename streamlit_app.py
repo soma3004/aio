@@ -5,27 +5,20 @@ st.title("物理基礎")
 
 st.write("物理基礎の公式:")
 
-option = st.selectbox(
-    '公式を選んでください',
-    ['変位','速度','等速直線運動','合成速度','相対速度','加速度','等加速度直線運動','鉛直投げ下ろし','鉛直投げ上げ','自由落下','水平投射'
-    
-    ]
-)
-
-st.write("変位")
-st.latex(r'\bar{v}=\frac{\Delta x}{\Delta t}')
-
-
-st.write("速度")
-st.latex(r'\bar{v}=\frac{x_2-x_1}{t_2-t_1}=\frac{\Delta x}{\Delta t}')
-
-
-st.write("等速直線運動")
-st.latex(r'x=vt')
-
-
-st.write("合成速度")
-st.latex(r'\vec{v}=\vec{v_1}+\vec{v_2}')
+options = ['変位','速度','等速直線運動','合成速度','相対速度','加速度','等加速度直線運動','鉛直投げ下ろし','鉛直投げ上げ','自由落下','水平投射']
+selection = st.selectbox("表示したい公式を選んでください:",options)
+if selection == '変位':
+    st.subheader("変位")
+    st.latex(r'\bar{v}=\frac{\Delta x}{\Delta t}')
+elif selection == '速度':
+    st.subheader("速度")
+    st.latex(r'\bar{v}=\frac{x_2-x_1}{t_2-t_1}=\frac{\Delta x}{\Delta t}')
+elif selection == '等速直線運動':
+    st.subheader("等速直線運動")
+    st.latex(r'x=vt')
+elif selection == '合成速度':
+    st.subheader("合成速度")
+    st.latex(r'\vec{v}=\vec{v_1}+\vec{v_2}')
 
 
 st.write("相対速度")
