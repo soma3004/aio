@@ -9,9 +9,12 @@ options = ['変位','速度','等速直線運動','合成速度','相対速度',
 selection = st.selectbox("表示したい公式を選んでください:",options)
 if selection == '変位':
     st.subheader("変位")
+    st.write("")
     st.latex(r'\bar{v}=\frac{\Delta x}{\Delta t}')
 elif selection == '速度':
     st.subheader("速度")
+    st.write("単位時間当たりの移動距離")
+    st.text("単位：ｍ／ｓ（メートル毎秒）etc")
     st.latex(r'\bar{v}=\frac{x_2-x_1}{t_2-t_1}=\frac{\Delta x}{\Delta t}')
 elif selection == '等速直線運動':
     st.subheader("等速直線運動")
