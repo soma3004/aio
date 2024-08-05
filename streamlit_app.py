@@ -1,24 +1,16 @@
 import streamlit as st
 import pandas as pd
-import random
-
-
-formulas = [
-    r'\bar{v}=\frac{\Delta x}{\Delta t}'
-    r"$a^2 + b^2 = c^2$",
-    r"$\int_{a}^{b} x^2 \, dx$"
-]
-selected_formula = st.selectbox(
-    "数式を選んでください",
-    options=formulas
-)
-st.latex(selected_formula)
 
 st.title("物理基礎")
 
-
-
 st.write("物理基礎の公式:")
+
+option = st.selectbox(
+    '公式を選んでください',
+    ['変位','速度','等速直線運動','合成速度','相対速度','加速度','等加速度直線運動','鉛直投げ下ろし','鉛直投げ上げ','自由落下','水平投射'
+    
+    ]
+)
 
 st.write("変位")
 st.latex(r'\bar{v}=\frac{\Delta x}{\Delta t}')
