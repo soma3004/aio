@@ -14,11 +14,14 @@ if selection == '変位':
 elif selection == '速度':
     st.subheader("速度")
     st.latex(r'\bar{v}=\frac{x_2-x_1}{t_2-t_1}=\frac{\Delta x}{\Delta t}')
+    st.write("　　ｖ：速さ　　ｘ：移動距離　　ｔ：経過時間")
     st.write("単位時間当たりの移動距離")
     st.text("単位：ｍ／ｓ（メートル毎秒）etc")
+    
 elif selection == '等速直線運動':
     st.subheader("等速直線運動")
     st.latex(r'x=vt')
+    st.write("一直線上を一定の速さで進む運動のこと")
 elif selection == '合成速度':
     st.subheader("合成速度")
     st.latex(r'\vec{v}=\vec{v_1}+\vec{v_2}')
