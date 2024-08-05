@@ -11,8 +11,7 @@ if selection == '平均の速度':
     st.subheader("平均の速度")
     st.write("一定区間における単位時間あたりの変位")
     st.latex(r'\bar{v}=\frac{\Delta x}{\Delta t}=\frac{x_2-x_1}{t_2-t_1}')
-    st.write("ｖ：速度　　x_2-x_1：変位")
-
+    st.write("ｖ：速度　　Deltaｘ：変位　　Deltaｔ：経過時間")
 elif selection == '速度':
     st.subheader("速度")
     st.write("単位時間当たりの移動距離")
