@@ -5,12 +5,14 @@ st.title("物理基礎")
 
 st.write("物理基礎の公式:")
 
-options = ['変位','速度','等速直線運動','合成速度','相対速度','加速度','等加速度直線運動','鉛直投げ下ろし','鉛直投げ上げ','自由落下','水平投射']
+options = ['平均の速度','速度','等速直線運動','合成速度','相対速度','加速度','等加速度直線運動','鉛直投げ下ろし','鉛直投げ上げ','自由落下','水平投射']
 selection = st.selectbox("表示したい公式を選んでください:",options)
-if selection == '変位':
-    st.subheader("変位")
-    st.write("")
-    st.latex(r'\bar{v}=\frac{\Delta x}{\Delta t}')
+if selection == '平均の速度':
+    st.subheader("平均の速度")
+    st.write("一定区間における単位時間あたりの変位")
+    st.latex(r'\bar{v}=\frac{\Delta x}{\Delta t}=\frac{x_2-x_1}{t_2-t_1}')
+    st.write("ｖ：速度  "r'\Delta x'":変位　"r'\Delta t'"：経過時間")
+
 elif selection == '速度':
     st.subheader("速度")
     st.write("単位時間当たりの移動距離")
@@ -20,8 +22,10 @@ elif selection == '速度':
     
 elif selection == '等速直線運動':
     st.subheader("等速直線運動")
-    st.latex(r'x=vt')
     st.write("一直線上を一定の速さで進む運動のこと")
+    st.latex(r'x=vt')
+    st.write("　　ｘ：移動距離　　ｖ：速さ　　ｔ：経過時間")
+    st.text("単位：ｍ／ｓ（メートル毎秒）etc")
 elif selection == '合成速度':
     st.subheader("合成速度")
     st.latex(r'\vec{v}=\vec{v_1}+\vec{v_2}')
