@@ -153,3 +153,9 @@ if st.button("再挑戦"):
     st.session_state.current_answer = st.session_state.current_problem[0]*st.session_state.current_problem[1]
     st.session_state.result_message = None
     st.session_state.user_answer = None
+
+if st.button("リセット"):
+    st.session_state.current_problem = generate_problem()
+    st.session_state.corrent_answer = st.session_state.current_problem[0] * st.session_state.current_problem[1]
+    st.session_state.result_message = None
+    st.session_state.user_answer = None
