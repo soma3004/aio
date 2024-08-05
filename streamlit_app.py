@@ -1,9 +1,8 @@
 import streamlit as st
-import pandas as pd
 
 st.title("物理基礎")
 
-st.write("物理基礎の公式:")
+st.header("物理基礎の公式:")
 
 options = ['平均の速度','速度','等速直線運動','合成速度','相対速度','加速度','等加速度直線運動','鉛直投げ下ろし','鉛直投げ上げ','自由落下','水平投射']
 selection = st.selectbox("表示したい公式を選んでください:",options)
