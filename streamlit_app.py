@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import random
 
 st.sidebar.title("単位を選択してください。")
 
@@ -118,3 +119,23 @@ st.title("単位の変換")
 selected_item=st.selectbox("",[
                            "長さ","時間","質量","面積","体積","時速","分速","秒速","密度","圧力","仕事","仕事率","電流","SI接頭語"])
 
+def generate_problem():
+    a = random.randint(1,9)
+    b = random.randint(1,9)
+    return a,b
+
+a,b = generate_problem()
+correct_answer = a*b
+
+st.write(f"問題:{a} × {b} = ?")
+user_answer = st.number_input("答えを入力してください",min_value=0,step=1)
+if st.button("回答を確認"):
+    if user_answer == correct_answer:
+        st.success("正解です！")
+    else:
+        st.error(f"不正解です。正しい答えは{correct_answer}")
+
+if st.button("再挑戦"):
+    a,b = generate_problem()
+    correct_answer = a*b
+    st.write(f"新しい問題:{a} × {b} = ?")
