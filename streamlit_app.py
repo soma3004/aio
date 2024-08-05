@@ -4,7 +4,7 @@ import random
 
 
 formulas = [
-    r"$E = mc^s$",
+    r'\bar{v}=\frac{\Delta x}{\Delta t}'
     r"$a^2 + b^2 = c^2$",
     r"$\int_{a}^{b} x^2 \, dx$"
 ]
