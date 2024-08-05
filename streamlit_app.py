@@ -6,7 +6,7 @@ st.sidebar.title("単位を選択してください。")
 
 
 problems=[    
-    {"question":"変位の公式","answer":""}
+    {"question":"変位の公式"}
     {"question":"速度の公式","answer":""}
     {"question":"等速直線運動","answer":""}
     {"question":"合成速度","answer":""}
