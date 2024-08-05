@@ -12,7 +12,7 @@ if selection == '変位':
     st.write("")
     st.latex(r'\bar{v}=\frac{\Delta x}{\Delta t}')
 elif selection == '速度':
-    col1, col2 = st.columns([3,1])
+    col1, col2 = st.columns([1,3])
     with col1:
         st.subheader("速さ")
     with col2:
