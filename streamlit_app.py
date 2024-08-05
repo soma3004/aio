@@ -1,23 +1,6 @@
 import streamlit as st
 import pandas as pd
 
-@st.chach_date
-def load_date():
-    part1 = pd.read_excel("SI接頭語.xlsx")
-    part2 = pd.read_excel("単語ー長さ.xlsx")
-    part3 = pd.read_excel("単語ー時間.xlsx")
-    part4 = pd.read_excel("単語ー質量.xlsx")
-    part5 = pd.read_excel("単語ー圧力.xlsx")
-    part6 = pd.read_excel("単語ー仕事.xlsx")
-    part7 = pd.read_excel("単語ー仕事率.xlsx")
-    part8 = pd.read_excel("単語ー時速.xlsx")
-    part9 = pd.read_excel("単語ー分速.xlsx")
-    part10 = pd.read_excel("単語ー秒速.xlsx")
-    part11 = pd.read_excel("単語ー面積.xlsx")
-    part12 = pd.read_excel("単語ー体積.xlsx")
-    part13 = pd.read_excel("単語ー電流.xlsx")
-    return pd.concat([part1, part2, part3, part4,part5,part6,part7,part8,part9,part10,part11,part12,part13], ignore_index=True)
-
 st.sidebar.title("単位を選択してください。")
 
 
