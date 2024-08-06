@@ -79,7 +79,7 @@ elif selection == '水平投射':
 elif selection == '斜方投射':
     st.subheader("斜方投射")
     st.write("物体を斜め上方に投げる運動")
-    st.latex(r'x=v_otcostheta')
+    st.latex(r'x=v_otcos{theta}')
 
 
 
