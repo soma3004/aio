@@ -4,7 +4,7 @@ st.title("物理基礎")
 
 st.header("物理基礎の公式")
 
-options = ['平均の速度','速度','等速直線運動','合成速度','相対速度','加速度','等加速度直線運動','鉛直投げ下ろし','鉛直投げ上げ','自由落下','水平投射']
+options = ['平均の速度','速度','等速直線運動','合成速度','相対速度','加速度','等加速度直線運動','鉛直投げ下ろし','鉛直投げ上げ','自由落下','水平投射','斜方投射']
 selection = st.selectbox("表示したい公式を選んでください:",options)
 if selection == '平均の速度':
     st.subheader("平均の速度")
@@ -76,7 +76,10 @@ elif selection == '水平投射':
     st.latex(r'x=v_ot')
     st.latex(r'y=\frac{1}{2}gt^2')
     st.write("x：水平方向の変位　　y：鉛直方向の変位　　Vo：初速度　　t：経過時間　　g：重力加速度")
-
+elif selection == '斜方投射':
+    st.subheader("斜方投射")
+    st.write("物体を斜め上方に投げる運動")
+    st.latex(r'x=v_otcostheta')
 
 
 
