@@ -32,7 +32,7 @@ elif selection == '合成速度':
     st.text("単位：ｍ／ｓ（メートル毎秒")
 elif selection == '相対速度':
     st.subheader("相対速度")
-    st.wite("動く物体Ａから観察したほかの物体Ｂの速度のこと")
+    st.write("動く物体Ａから観察したほかの物体Ｂの速度のこと")
     st.latex(r'\vec{v_(ab)}=\vec{v_b}-\vec{v_a}')
     st.write("Ｖab：Ａに対するＢの相対速度　　Ｖa：物体Ａ（観察者）の速度　　Ｖb：物体Ｂ（相手）の速度")
     st.text("単位：ｍ／ｓ（メートル毎秒）")
