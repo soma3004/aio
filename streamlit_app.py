@@ -1,8 +1,12 @@
 import streamlit as st
 
-st.title("物理基礎")
+def generate_random_equestion():
+    equestion = [
+        lambda
+    ]
 
-st.header("物理基礎の公式")
+def show_kousiki_page():
+    st.header("物理基礎の公式")
 
 options = ['平均の速度','速度','等速直線運動','合成速度','相対速度','加速度','等加速度直線運動','鉛直投げ下ろし','鉛直投げ上げ','自由落下','水平投射','斜方投射','重力','フックの法則','圧力','水圧','浮力']
 selection = st.selectbox("表示したい公式を選んでください:",options)
@@ -16,8 +20,7 @@ elif selection == '速度':
     st.write("単位時間当たりの移動距離")
     st.latex(r'\bar{v}=\frac{x_2-x_1}{t_2-t_1}=\frac{\Delta x}{\Delta t}')
     st.write("　　ｖ：速さ　　ｘ：移動距離　　ｔ：経過時間")
-    st.text("単位：ｍ／ｓ（メートル毎秒）etc")
-    
+    st.text("単位：ｍ／ｓ（メートル毎秒）etc")    
 elif selection == '等速直線運動':
     st.subheader("等速直線運動")
     st.write("一直線上を一定の速さで進む運動のこと")
@@ -115,4 +118,15 @@ elif selection == '浮力':
     st.latex(r'F=pVg')
     st.write("F：浮力の大きさ　　p：流体の密度　　V：物体が排除した流体の体積　　g：重力加速度")
     st.text("単位：N（ニュートン）")    
+
+def show_test_page():
+
+
+def main():
+    st.title('物理基礎')
+    page = st.sidebar.radio('Navigation',['公式一覧','テスト'])
+    if page =='公式一覧':
+        show_kousiki_page()
+    elif page == 'テスト':
+        show_test_page()
 
