@@ -5,8 +5,6 @@ def mine():
 
     st.write(f'checkbox is {"checkbox" if checkbox_value else "unchecked"}')
 
-if __name__ =='__mine__':
-    mine()
 
 st.title("物理基礎")
 
@@ -124,3 +122,5 @@ elif selection == '浮力':
     st.write("F：浮力の大きさ　　p：流体の密度　　V：物体が排除した流体の体積　　g：重力加速度")
     st.text("単位：N（ニュートン）")    
 
+if __name__ =='__mine__':
+    mine()
