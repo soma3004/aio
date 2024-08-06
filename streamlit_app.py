@@ -1,5 +1,13 @@
 import streamlit as st
 
+def mine():
+    checkbox_value = st.sudebar.checkbox('モード選択')
+
+    st.write(f'checkbox is {"checkbox" if checkbox_value else "unchecked"}')
+
+if __name__ =='__mine__':
+    mine()
+
 st.title("物理基礎")
 
 st.header("物理基礎の公式")
