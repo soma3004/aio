@@ -1,9 +1,5 @@
 import streamlit as st
 
-def generate_random_equestion():
-    equestion = [
-        lambda
-    ]
 
 def show_kousiki_page():
     st.header("物理基礎の公式")
