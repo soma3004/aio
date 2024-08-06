@@ -1,7 +1,5 @@
 import streamlit as st
 
-st.sidebar_title("モード選択")
-
 st.title("物理基礎")
 
 st.header("物理基礎の公式")
