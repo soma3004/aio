@@ -71,7 +71,7 @@ elif selection == '鉛直投げ上げ':
     st.latex(r'v^2-v_o^2=-2ag')
     st.write("V：速さ　　Vo：初速度　　g：重力加速度　　t：経過時間　　y：変位")
 elif selection == '水平投射':
-    st.write("水平投射")
+    st.subheader("水平投射")
     st.write("物体をある高さから水平方向に投げ出す運動")
     st.latex(r'x=v_ot')
     st.latex(r'y=\frac{1}{2}gt^2')
