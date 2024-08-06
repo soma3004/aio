@@ -79,7 +79,13 @@ elif selection == '水平投射':
 elif selection == '斜方投射':
     st.subheader("斜方投射")
     st.write("物体を斜め上方に投げる運動")
-    st.latex(r'x=v_otcos{theta}')
+    st.latex(r'v_x=v_ocosθ')
+    st.latex(r'x=v_otcosθ')
+    st.latex(r'v_y=v_osinθ-gt')
+    st.latex(r'y=v_otsinθ-\frac{1}{2}gt^2')
+    st.latex(r'v_y^2-(v_osinθ)^2=-sgy')
+    st.latex(r'y=tanθx-\frac{g}{2v_o^2cos^2θ}x^2')
+    st.write("v：速度　　Vo：初速度　　Vx：速度vのx成分　　Vy：速度vのy成分　　x：水平方向の変位　　y：鉛直方向の変位　　t：経過時間　　g：重力加速度　　θ:水平方向となす角度")
 
 
 
