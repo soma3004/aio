@@ -142,8 +142,8 @@ def test():
 
    current_question = problems[st.session_state.question_index]
 
-   st.markdown("問題")
-   st.markdown(current_question["question"])
+   st.subheader("問題")
+   st.subheader(current_question["question"])
    user_answer = st.selectbox("解答を選択",options)   
    if st.button('答え合わせ'):
       answer = current_question["answer"]
@@ -154,6 +154,7 @@ def test():
             st.experimental_rerun()
       else:
          st.write("不正解です。")
+         st.write("正しい答えは{current_question[answer]}です。")
          if st.button("次の問題"):
             next_question()
             st.experimental_rerun()
@@ -166,3 +167,4 @@ if selection == "公式":
    kousiki()
 elif selection == "テスト":
    test()
+
