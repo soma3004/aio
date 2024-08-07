@@ -122,8 +122,8 @@ def kousiki():
 def test():
    problems = [
       {"question":"次の公式は何を求める公式か？： $x = vt$","answer":["等速直線運動"]},
-      {"question":"次の公式は何を求める公式か？:  $a=\frac{Delta x}{Delta t}=\frac{x_2-x_1}{t_2-t_1}$","answer":["加速度"]},
-      {"question":"次の公式は何を求める公式か？:  $\vec{v_(ab)}=\vec{v_b}-\vec{v_a}$","answer":["Aに対するBの相対速度"]}
+      {"question":"次の公式は何を求める公式か？:  $a=\\frac{Delta x}{Delta t}=\\frac{x_2-x_1}{t_2-t_1}$","answer":["加速度"]},
+      {"question":"次の公式は何を求める公式か？:  $\\vec{v_(ab)}=\\vec{v_b}-\\vec{v_a}$","answer":["Aに対するBの相対速度"]}
    ]
    if 'question_index' not in st.session_state:
       st.session_state.question_index = random.randint(0,len(problems) - 1)
