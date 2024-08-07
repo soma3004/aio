@@ -183,7 +183,7 @@ def test():
             st.experimental_rerun()
       else:
          st.write("不正解です。")
-         st.write(f"正しい答えは: **{answer}**です。")
+         st.write(f"正しい答えは: {answer}です。")
          if st.button("次の問題"):
             next_question()
             st.experimental_rerun()
