@@ -12,7 +12,7 @@ def kousiki():
        st.subheader("平均の速度")
        st.write("一定区間における単位時間あたりの変位")
        st.latex(r'\bar{v}=\frac{\Delta x}{\Delta t}=\frac{x_2-x_1}{t_2-t_1}')
-       st.markdown("ｖ：速度　　$Delta x$：変位　　$Delta t$：経過時間")
+       st.write("ｖ：速度　　 Δx：変位　　Δt：経過時間")
     elif selection == '速度':
        st.subheader("速度")
        st.write("単位時間当たりの移動距離")
