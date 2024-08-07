@@ -41,7 +41,7 @@ def kousiki():
        st.subheader("加速度")
        st.write("単位時間あたりの速度の変化")
        st.latex(r'a=\frac{Delta x}{Delta t}=\frac{x_2-x_1}{t_2-t_1}')
-       st.write("a：加速度　　Deltaｘ：速度の変化　　Deltaｔ：経過時間")
+       st.write("a：加速度　　Δｘ：速度の変化　　Δｔ：経過時間")
        st.text("単位：ｍ／ｓ^2（メートル毎秒毎秒）  ")
     elif selection == '等加速度直線運動':
        st.subheader("等加速度直線運動")
