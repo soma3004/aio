@@ -150,7 +150,7 @@ def test():
             next_question()
             st.experimental_rerun()
       else:
-         st.write("不正解です。正解は["amswer"]です。")
+         st.write("不正解です。")
          if st.st.button("次の問題"):
             next_question()
             st.experimental_rerun()
