@@ -49,7 +49,7 @@ def kousiki():
     elif selection == '加速度':
        st.title("加速度")
        st.write("単位時間あたりの速度の変化")
-       st.latex(r'a=\frac{Delta x}{Delta t}=\frac{x_2-x_1}{t_2-t_1}')
+       st.latex(r'a=\frac{\Delta x}{\Delta t}=\frac{x_2-x_1}{t_2-t_1}')
        st.write(" ")
        st.write("a：加速度　　Δｘ：速度の変化　　Δｔ：経過時間")
        st.write(" ")
