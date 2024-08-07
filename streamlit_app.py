@@ -133,9 +133,9 @@ def test():
       st.session_state.user_answer = ""
       st.session_state.correct = None
    def next_question():
-      st.session_state.quesiton_index = random.randint(0,len(problems) - 1)
+      st.session_state.question_index = random.randint(0,len(problems) - 1)
       st.session_state.user_answer = ""
-      st.session_state.corrent = None
+      st.session_state.correct = None
 
    
    st.title("テスト")
