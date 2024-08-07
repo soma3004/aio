@@ -100,7 +100,7 @@ def kousiki():
        st.latex(r'x=v_otcosθ')
        st.latex(r'v_y=v_osinθ-gt')
        st.latex(r'y=v_otsinθ-\frac{1}{2}gt^2')
-       st.latex(r'v_y^2-(v_osinθ)^2=-sgy')
+       st.latex(r'v_y^2-(v_osinθ)^2=-2gy')
        st.latex(r'y=tanθx-\frac{g}{2v_o^2cos^2θ}x^2')
        st.write(" ")
        st.write("v：速度　　Vo：初速度　　Vx：速度vのx成分　　Vy：速度vのy成分　　x：水平方向の変位　　y：鉛直方向の変位　　t：経過時間　　g：重力加速度　　θ:水平方向となす角度")
@@ -151,6 +151,26 @@ def test():
       {"question":"$v=v_o+at$","answer":["等加速度直線運動"]},
       {"question":"$x=v_ot+\\frac{1}{2}at^2$","answer":["等加速度直線運動"]},
       {"question":"$v^2-v_o^2=2ax$","answer":["等加速度直線運動"]},
+      {"question":"$F=pVg$","answer":"[浮力]"},
+      {"question":"$p=phg$","answer":"[水圧]"},
+      {"question":"$P=\\frac{F}{S}$","answer":"[圧力]"},
+      {"question":"$F=kx$","answer":"[フックの法則]"},
+      {"question":"$W=mg$","answer":"[重力]"},
+      {"question":"$v_x=v_ocosΘ$","answer":"[斜方投射]"},
+      {"question":"$x=v_otcosΘ$","answer":"[斜方投射]"},
+      {"question":"$v_y=v_osinΘ-gt$","answer":"[斜方投射]"},
+      {"question":"$y=v_otsinΘ-\\frac{1}{2}gt^2$","answer":"[斜方投射]"},
+      {"question":"$v_y^2-(v_osinΘ)^2=-2gy$","answer":"[斜方投射]"},
+      {"question":"$y=tanΘx-\\frac{g}{2v_o^2cos^2Θ}x^2$","answer":"[斜方投射]"},
+      {"question":"$\\vec{v}=\\vec{v_1}+\\vec{v_2}$","answer":"[合成速度]"},
+      {"question":"$\\bar{v}=\\frac{x_2-x_1}{t_2-t_1}=\\frac{Δx}{Δt}$","answer":"[速度][平均の速さ]"}, 
+      {"question":"$v=gt$","answer":"[自由落下]"}, 
+      {"question":"$y=\\frac{1}{2}gt^2$","answer":"[自由落下]"}, 
+      {"question":"$v^2=2gy$","answer":"[自由落下]"}, 
+      {"question":"$v=v_o+gt$","answer":"[鉛直投げ下ろし]"}, 
+      {"question":"$y=v_ot+\\frac{1}{2}gt^2$","answer":"[鉛直投げ下ろし]"},
+      {"question":"$v^2-v_o^2=2gy$","answer":"[鉛直投げ下ろし]"},
+
    ]
    if 'question_index' not in st.session_state:
       st.session_state.question_index = random.randint(0,len(problems) - 1)
