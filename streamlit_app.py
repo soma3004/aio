@@ -144,11 +144,10 @@ def test():
 
    st.subheader("問題")
    st.subheader("次の公式は何を求める公式か？")
-   st.write(" ")
-   st.write(" ")
    st.subheader(current_question["question"])
 
-
+   st.write(" ")
+   st.write(" ")
 
    user_answer = st.selectbox("解答を選択",options)   
    if st.button('答え合わせ'):
