@@ -121,12 +121,12 @@ def kousiki():
 
 def test():
    problems = [
-      {"question":"次の公式は何を求める公式か？： $x = vt$","answer":["等速直線運動"]},
-      {"question":"次の公式は何を求める公式か？:  $a=\\frac{Delta x}{Delta t}=\\frac{x_2-x_1}{t_2-t_1}$","answer":["加速度"]},
-      {"question":"次の公式は何を求める公式か？:  $\\vec{v_(ab)}=\\vec{v_b}-\\vec{v_a}$","answer":["相対速度"]},
-      {"question":"次の公式は何を求める公式か？:  $v=v_o+at$","answer":["等加速度直線運動"]},
-      {"question":"次の公式は何を求める公式か？:  $x=v_ot+\\frac{1}{2}at^2$","answer":["等加速度直線運動"]},
-      {"question":"次の公式は何を求める公式か？:  $v^2-v_o^2=2ax$","answer":["等加速度直線運動"]},
+      {"question":"$x = vt$","answer":["等速直線運動"]},
+      {"question":"$a=\\frac{Delta x}{Delta t}=\\frac{x_2-x_1}{t_2-t_1}$","answer":["加速度"]},
+      {"question":"$\\vec{v_(ab)}=\\vec{v_b}-\\vec{v_a}$","answer":["相対速度"]},
+      {"question":"$v=v_o+at$","answer":["等加速度直線運動"]},
+      {"question":"$x=v_ot+\\frac{1}{2}at^2$","answer":["等加速度直線運動"]},
+      {"question":"$v^2-v_o^2=2ax$","answer":["等加速度直線運動"]},
    ]
    if 'question_index' not in st.session_state:
       st.session_state.question_index = random.randint(0,len(problems) - 1)
@@ -143,6 +143,8 @@ def test():
    current_question = problems[st.session_state.question_index]
 
    st.subheader("問題")
+   st.subheader("次の公式は何を求める公式か？")
+   
    st.subheader(current_question["question"])
    user_answer = st.selectbox("解答を選択",options)   
    if st.button('答え合わせ'):
