@@ -1,8 +1,6 @@
 import streamlit as st
 import random
 
-st.title("物理基礎")
-
 st.header("物理基礎の公式")
 
 
