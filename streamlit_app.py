@@ -8,6 +8,10 @@ st.header("物理基礎の公式")
 st.markdown("##問題文")
 st.markdown("次の数式を解いてください: $x^2 + 2x +1 =0$")
 
+st.markdown("1.$x = 0$")
+st.markdonw("2.$x = -1$")
+st.markdonw("3.$x = 1$")
+st.markdonw("4.$x = -2$")
 options = ['平均の速度','速度','等速直線運動','合成速度','相対速度','加速度','等加速度直線運動','鉛直投げ下ろし','鉛直投げ上げ','自由落下','水平投射','斜方投射','重力','フックの法則','圧力','水圧','浮力']
 selection = st.selectbox("表示したい公式を選んでください:",options)
 if selection == '平均の速度':
