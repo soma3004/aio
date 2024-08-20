@@ -3,10 +3,11 @@ import random
 
 st.header("物理基礎の公式")
 
-options = ['平均の速度','速度','等速直線運動','合成速度','相対速度','加速度','等加速度直線運動','鉛直投げ下ろし','鉛直投げ上げ','自由落下','水平投射','斜方投射','重力','フックの法則','圧力','水圧','浮力']
+options1 = ['平均の速度','速度','等速直線運動','合成速度','相対速度','加速度','等加速度直線運動','鉛直投げ下ろし','鉛直投げ上げ','自由落下','水平投射','斜方投射','重力','フックの法則','圧力','水圧','浮力']
+options2 = ['速度''平均の速さ','等速直線運動','合成速度','相対速度','加速度','等加速度直線運動','鉛直投げ下ろし','鉛直投げ上げ','自由落下','水平投射','斜方投射','重力','フックの法則','圧力','水圧','浮力']
 
 def kousiki():
-    selection = st.selectbox("表示したい公式を選んでください:", options)
+    selection = st.selectbox("表示したい公式を選んでください:", options1)
     if selection == '平均の速度':
        st.title("平均の速度")
        st.write("一定区間における単位時間あたりの変位")
@@ -162,7 +163,7 @@ def test():
       {"question":"v_y^2-(v_o\\sin\\theta)^2=-2gy","answer":["斜方投射"]},
       {"question":"y=\\tan\\theta x-\\frac{g}{2v_o^2\\cos^2\\theta}x^2","answer":["斜方投射"]},
       {"question":"\\vec{v}=\\vec{v_1}+\\vec{v_2}","answer":["合成速度"]},
-      {"question":"\\bar{v}=\\frac{x_2-x_1}{t_2-t_1}=\\frac{\\Delta x}{\\Delta t}","answer":["速度","平均の速さ"]}, 
+      {"question":"\\bar{v}=\\frac{x_2-x_1}{t_2-t_1}=\\frac{\\Delta x}{\\Delta t}","answer":["速度""平均の速さ"]}, 
       {"question":"v=gt","answer":["自由落下"]}, 
       {"question":"y=\\frac{1}{2}gt^2","answer":["自由落下"]}, 
       {"question":"v^2=2gy","answer":["自由落下"]}, 
@@ -196,7 +197,7 @@ def test():
    st.write(" ")
    st.write(" ")
 
-   user_answer = st.selectbox("解答を選択", options, key="user_answer_select")
+   user_answer = st.selectbox("解答を選択", options2, key="user_answer_select")
    
    col1, col2 = st.columns(2)
    
